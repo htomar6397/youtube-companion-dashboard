@@ -71,10 +71,13 @@ export default function Dashboard() {
   if (!isAuthenticated) return <AuthScreen onLogin={handleLogin} />;
   if (!videoId) {
     return (
-      <VideoSelection
-        userVideos={userVideos}
-        onVideoSelect={handleVideoSelect}
-      />
+      <>
+        <DashboardHeader onChangeVideo={resetVideo} onLogout={handleLogout} />
+        <VideoSelection
+          userVideos={userVideos}
+          onVideoSelect={handleVideoSelect}
+        />
+      </>
     );
   }
 
