@@ -4,7 +4,7 @@
 
 A minimal dashboard to manage YouTube videos with proper Google OAuth authentication, comment management, and personal notes. All actions are logged for auditing and improvement tracking.
 
-## 🚀 Features
+## Features
 
 - **Google OAuth Authentication** - Secure login with YouTube API access
 - **Video Selection** - Choose from your uploads or enter any video ID/URL
@@ -13,7 +13,7 @@ A minimal dashboard to manage YouTube videos with proper Google OAuth authentica
 - **Personal Notes** - Add tagged notes with search functionality
 - **Activity Logging** - Track all actions in the dashboard
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Google OAuth Setup (REQUIRED)
 
@@ -44,7 +44,7 @@ GOOGLE_REDIRECT_URI=http://localhost:3001/api/auth/google/callback
 SESSION_SECRET=your_random_session_secret_here
 ```
 
-## 📱 User Flow
+## User Flow
 
 ### Step 1: Login with Google (OAuth)
 
@@ -173,7 +173,7 @@ All user actions are automatically logged in the `logs` collection for traceabil
 - **Note Actions**: Adding, deleting, searching notes
 - **Authentication**: Login/logout events
 
-## 🚀 Deployment Guide
+## Deployment Guide
 
 ### Prerequisites
 
@@ -223,21 +223,8 @@ npm run build
 vercel --prod
 ```
 
-## ✅ Task Completion Checklist
 
-- [x] **Upload unlisted video** - User uploads manually to YouTube Studio
-- [x] **Show video details** - Fetch via YouTube API with proper authentication
-- [x] **Comment management** - Add, reply, delete comments via API
-- [x] **Edit title/description** - Update video metadata via API
-- [x] **Notes system** - Personal notes stored in MongoDB with tags
-- [x] **Search/tagging** - Find notes by content or tags
-- [x] **Event logging** - All actions logged to database
-- [x] **API documentation** - Complete endpoint list in README
-- [x] **Database schema** - Full MongoDB schema documented
-- [x] **OAuth authentication** - Secure Google login with YouTube scopes
-- [x] **Deployment ready** - Environment variables and deployment guide
-
-## 🏗️ Architecture
+## Architecture
 
 **Backend**: Node.js + Express + MongoDB + Google OAuth2 + YouTube Data API v3  
 **Frontend**: React + TypeScript + Vite + shadcn/ui + Tailwind CSS  
@@ -245,6 +232,3 @@ vercel --prod
 **Database**: MongoDB with Mongoose ODM  
 **APIs**: RESTful API design with proper error handling
 
----
-
-_This is a minimal MVP structure. Extend as needed._
